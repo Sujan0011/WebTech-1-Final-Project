@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-contact">
+  <div class="flag"></div>
   <nav><div class="wrap bar">
     <a class="logo" href="index.html"><i class="fas fa-recycle"></i> Nikhil Suppliers</a>
     <button class="menu" aria-label="Menu"><i class="fas fa-bars"></i></button>
@@ -15,34 +16,40 @@
       <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="about.html"><i class="fas fa-users"></i> About Us</a></li>
       <li><a class="active" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
     </ul>
   </div></nav>
-  <main><div class="wrap hero">
-    <div>
-      <p>Contact</p>
-      <h1>Come to the yard or leave a note.</h1>
-      <p class="just">Call to sell plastic bottles or to buy washed flakes. The same pickup collects bottles and delivers the clean pieces.</p>
-      <p><i class="fas fa-phone"></i> <a href="tel:9827377237">9827377237</a><br>
-      <i class="fab fa-whatsapp"></i> <a href="https://wa.me/9779827377237">WhatsApp 9827377237</a><br>
-      <i class="fas fa-envelope"></i> <a href="mailto:sujan.acharya2062@gmail.com">sujan.acharya2062@gmail.com</a></p>
+  <main class="wrap hero">
+    <div class="reveal">
+      <p class="kicker">सम्पर्क · चुनिखेल</p>
+      <h1>Talk to the yard.</h1>
+      <p class="just">Sell plastic bottles or ask for washed flakes. The form opens WhatsApp to Nikhil with your note already written. You press Send once.</p>
+      <div class="contacts">
+        <a class="panel contact" href="tel:9827377237"><i class="fas fa-phone"></i><span>Call<br><strong>9827377237</strong></span></a>
+        <a class="panel contact" href="https://wa.me/9779827377237"><i class="fab fa-whatsapp"></i><span>WhatsApp<br><strong>9827377237</strong></span></a>
+        <a class="panel contact" href="mailto:sujan.acharya2062@gmail.com"><i class="fas fa-envelope"></i><span>Email<br><strong>sujan.acharya2062@gmail.com</strong></span></a>
+      </div>
       <div class="map">
         <iframe title="Nikhil Suppliers map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.5145988773193!2d85.36083986965156!3d27.748429998509852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bb76aa2b233%3A0x47ee2e8aec1ef236!2zTWFzdGEgRmFicmljYXRvcnMgKOCkruCkt-CljeCkn-CkviDgpKvgpYfgpKzgpLzgpL_gpJXgpYfgpJ_gpLgp!5e1!3m2!1sen!2snp!4v1795050900960!5m2!1sen!2snp" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="tag"><strong>Nikhil Suppliers</strong><br>Budhanilkantha-11, Chunikhel, Kathmandu</div>
       </div>
     </div>
-    <form id="contactForm" class="card">
-      <label for="name">Name</label><input id="name" name="name" autocomplete="name">
-      <label for="phone">Phone</label><input id="phone" name="phone" inputmode="tel" autocomplete="tel">
-      <label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea>
+    <form id="contactForm" class="panel reveal">
+      <h2>Send on WhatsApp</h2>
+      <p>This reaches 9827377237. Nikhil sees your name, number, and message.</p>
+      <label for="name">Name</label><input id="name" name="name" autocomplete="name" required>
+      <label for="phone">Phone</label><input id="phone" name="phone" inputmode="tel" autocomplete="tel" required>
+      <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
       <p id="err" class="err"></p><p id="ok" class="ok"></p>
-      <button type="submit">Save enquiry</button>
+      <button class="btn" type="submit"><i class="fab fa-whatsapp"></i> Send to Nikhil</button>
     </form>
-  </div></main>
+  </main>
   <footer><div class="wrap foot">
     <div><strong>Nikhil Suppliers</strong><p><a href="tel:9827377237">9827377237</a> · <a href="https://wa.me/9779827377237">WhatsApp</a><br><a href="mailto:sujan.acharya2062@gmail.com">sujan.acharya2062@gmail.com</a></p></div>
     <div><strong>Yard</strong><p><i class="fas fa-map-marker-alt"></i> Budhanilkantha-11, Chunikhel, Kathmandu</p></div>
-    <div><strong>Pages</strong><p><a href="index.html">Home</a><br><a href="about.html">About Us</a><br><a href="contact.html">Contact</a></p></div>
+    <div><strong>Pages</strong><p><a href="index.html">Home</a><br><a href="about.html">About Us</a><br><a href="contact.html">Contact</a><br><a href="game.html">Game</a></p></div>
   </div></footer>
+  <a class="wa" href="https://wa.me/9779827377237" aria-label="WhatsApp Nikhil"><i class="fab fa-whatsapp"></i></a>
   <script src="js/script.js"></script>
 </body>
 </html>

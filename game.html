@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game | Nikhil Suppliers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-about">
+  <div class="flag"></div>
+  <nav><div class="wrap bar">
+    <a class="logo" href="index.html"><i class="fas fa-recycle"></i> Nikhil Suppliers</a>
+    <button class="menu" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <ul class="links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-users"></i> About Us</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a class="active" href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
+    </ul>
+  </div></nav>
+  <main class="wrap section">
+    <p class="kicker">Yard game</p>
+    <h1>Catch every bottle.</h1>
+    <p class="just">Move the dustbin with the mouse, finger, or arrow keys. A catch keeps the game going. One miss stops it.</p>
+    <div class="play" id="stage">
+      <div class="hud">
+        <span>Score <strong id="score">0</strong></span>
+        <span>Best <strong id="best">0</strong></span>
+        <span>Speed <strong id="speed">1</strong></span>
+        <button class="btn" id="pause" type="button">Pause</button>
+      </div>
+      <canvas id="board" width="900" height="520"></canvas>
+      <div class="overlay" id="overlay">
+        <div>
+          <h2 id="title">Catch the bottles</h2>
+          <p id="note">Drag the bin. Do not let a bottle hit the ground.</p>
+          <button class="btn" id="start" type="button">Start</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer><div class="wrap foot">
+    <div><strong>Nikhil Suppliers</strong><p><a href="tel:9827377237">9827377237</a> · <a href="https://wa.me/9779827377237">WhatsApp</a><br><a href="mailto:sujan.acharya2062@gmail.com">sujan.acharya2062@gmail.com</a></p></div>
+    <div><strong>Yard</strong><p><i class="fas fa-map-marker-alt"></i> Budhanilkantha-11, Chunikhel, Kathmandu</p></div>
+    <div><strong>Pages</strong><p><a href="index.html">Home</a><br><a href="game.html">Game</a></p></div>
+  </div></footer>
+  <a class="wa" href="https://wa.me/9779827377237" aria-label="WhatsApp Nikhil"><i class="fab fa-whatsapp"></i></a>
+  <script src="js/script.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
